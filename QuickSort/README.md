@@ -9,4 +9,21 @@
 - pivot을 기준으로 pivot보다 작은 원소는 pivot의 왼쪽으로, pivot보다 큰 원소는 pivot의 오른쪽으로 옮긴다.
 - pivot을 제외한 왼쪽 리스트와 오른쪽 리스트를 다시 정렬한다.
 
+## 시간 복잡도
+worst case의 recursion equation은 다음과 같다.
+W(n)=W(0)+W(n-1)+n-1
+예를 들어, 배열이 이미 오름차순으로 정렬되어 있을 때 worst-case가 될 수 있다. pivot을 기준으로 나머지 모든 원소(n-1)가 pivot의 오른쪽으로 이동된다. n-1은 길이 n의 배열에서 pivot과 나머지 n-1개의 비교연산 횟수이다.
+Recursion Tree를 이용하여 시간 복잡도를 계산하면 n(n-1)/2∈θ(n^2)이다.
 
+worst case의 시간복잡도가 아닌, average case의 시간복잡도는 다음과 같다.
+A(n)=∑_(p=1)^n(1/n[A(n-1)+A(p-1)])+n-1
+    =2/n∑_(p=1)^n(A(p-1))+n-1
+nA(n)=2∑_(p=1)^n(A(p-1))+n(n-1)
+(n-1)A(n-1)=∑_(p=1)^n(A(p-1))+(n-1)(n-2)
+nA(n)-(n-1)A(n-1)=2A(n-1)+2(n-1)
+nA(n)=(n+1)A(n+1)+2(n-1)
+(A)/(n+1)=A(n+1)/n+2(n-1)/n(n+1)
+a_n=A(n)/n+1
+a_n=a_n-1+2(n-1)/n(n+1)=∑_(i=1)^n(2(i-1)/i(i+1))=2∑_(i=1)^n(1/i)=2lgn
+A(n)=2(n+1)lgn
+A(n)∈θ(nlgn)
