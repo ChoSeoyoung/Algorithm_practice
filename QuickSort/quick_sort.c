@@ -20,7 +20,6 @@ void quick_sort(int list[],int low, int high) {
         list[low] = list[pivotpoint];
         list[pivotpoint] = tmp;
         
-
         quick_sort(list, low, pivotpoint - 1);
         quick_sort(list, pivotpoint + 1, high);
     }
