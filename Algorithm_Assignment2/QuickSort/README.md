@@ -11,3 +11,12 @@ worst case의 recursion equation은 다음과 같다.
 W(n)=W(0)+W(n-1)+n-1
 Recursion Tree를 이용하면 시간 복잡도는 W(n)∈θ(n^2)이다.
 Quick sort의 average time complexity는 다음과 같다.
+A(n)=∑_p=1^p=n(1/n[A(n-p)+A(p-1)])+n-1
+    =2/n*∑_p=1^p=n(A(p-1))+n-1
+nA(n)=2∑_p=1^p=n(A(p-1))+n(n-1)
+(n-1)A(n-1)=2∑_(p=1)^n(A(p-1))+(n-1)(n-2)
+nA(n)-(n-1)A(n-1)=2A(n-1)+2(n-1)
+nA(n)=(n+1)A(n)+2(n-1)
+A(n)/n+1=(n+1)A(n)/n+2(n-1)/n(n+1)
+∑_i=1^i=n(2/i)=2lgn
+따라서 A(n)∈θ(nlgn)
