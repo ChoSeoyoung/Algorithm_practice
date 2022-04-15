@@ -8,4 +8,13 @@ Heap Sort의 과정은 다음과 같다.
 1. 힙을 만든다.(makeheap)
 2. 힙에서 원소를 하나씩 꺼낸다. 이때, 다시 힙을 restore하는 과정을 거침으로써(Siftdown) 힙의 구조를 유지한다.(removekeys)
 
-## makeheap
+## 시간복잡도
+makeheap와 removekeys에서 발생하는 비교연산의 횟수를 구해보자.
+### makeheap
+깊이 d의 트리에서 j번째 깊이에는 2^j개의 노드가 있고, 각 노드가 makeheap을 위해서 Siftdown해야하는 최대 횟수는 2(d-j-1)이다.
+∑_j=0^j=d-1(2*2^j*(d-j-1))=2(2^d-d-1)
+2(2^d-d-1+d)=2(n-1)
+### removekeys
+∑_j=1^j=d-1(2*j*2^j)=2(nlgn-2n+2)=2nlgn-4n+4
+
+따라서 W(n)∈θ(nlgn)
