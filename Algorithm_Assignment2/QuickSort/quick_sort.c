@@ -27,21 +27,3 @@ void quick_sort(int list[], int low, int high) {
         quick_sort(list, pivotpoint + 1, high);
     }
 }
-
-int main() {
-    int list[MAX];
-    clock_t before;
-    double result;
-
-    srand(time(NULL));
-    for (int i = 0; i < MAX; i++) {
-        list[i] = rand() % MAX;
-    }
-
-
-    before = clock();
-    quick_sort(list, 0, MAX - 1);
-    result = (double)(clock() - before) / CLOCKS_PER_SEC;
-    printf("걸린시간은 %5.5f 입니다.", result);
-    return 0;
-}

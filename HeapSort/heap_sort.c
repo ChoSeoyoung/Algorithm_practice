@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-#include "heap_sort.h"
-
-void siftdown(int* list, int size, int mid) {
+void heapify(int* list, int size, int mid) {
     int parent = mid;
     int left = parent * 2 + 1;
     int right = parent * 2 + 2;
@@ -20,7 +18,7 @@ void siftdown(int* list, int size, int mid) {
         tmp = list[largest];
         list[largest] = list[parent];
         list[parent] = tmp;
-        siftdown(list, size, largest);
+        heapify(list, size, largest);
     }
 }
 
@@ -28,11 +26,13 @@ void makeHeap(int* list, int size) {
     int mid = size / 2 - 1;
 
     for (mid; mid >= 0; mid--) {
-        siftdown(list, size, mid);
+        heapify(list, size, mid);
     }
 }
 
-void removekeys(int* list,int size){
+void heapSort(int* list, int size) {
+    makeHeap(list, size);
+
     int tmp;
     while (size > 1) {
         tmp = list[0];
@@ -40,11 +40,14 @@ void removekeys(int* list,int size){
         list[size - 1] = tmp;
 
         size--;
-        siftdown(list, size, 0);
+        heapify(list, size, 0);
     }
 }
 
-void heap_sort(int* list, int size) {
-    makeHeap(list, size);
-    removekeys(list, size);
+int main() {
+    int list[10] = {5,1,8,26,10,62,98,2,55,8};
+    heapSort(list, 10);
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", list[i]);
+    }
 }

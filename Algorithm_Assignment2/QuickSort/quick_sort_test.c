@@ -9,21 +9,10 @@
 #define MAX4 5000
 #define MAX5 10000
 
-void exchange_sort(int list[], int size) {
-	int tmp;
-	for (int i = 0; i < size - 1; i++) {
-		for (int j = i + 1; j < size; j++) {
-			if (list[i] > list[j]) {
-				tmp = list[i];
-				list[i] = list[j];
-				list[j] = tmp;
-			}
-		}
-	}
-}
+#include "quick_sort.h"
 
 int main() {
-	int a1[MAX1];
+    int a1[MAX1];
     int a2[MAX2];
     int a3[MAX3];
     int a4[MAX4];
@@ -41,7 +30,7 @@ int main() {
     
     for(int i=0;i<5;i++){
         gettimeofday(&before1, NULL);
-        exchange_sort(a1, MAX1);
+        quick_sort(a1, 0, MAX1 - 1);
         gettimeofday(&after1, NULL);
         tmp[i] = (double)(after1.tv_sec) + (double)(after1.tv_usec) / 1000000.0 - (double)(before1.tv_sec) - (double)(before1.tv_usec) / 1000000.0;
     }
@@ -50,7 +39,7 @@ int main() {
     
     for(int i=0;i<5;i++){
         gettimeofday(&before2, NULL);
-        exchange_sort(a2, MAX2);
+        quick_sort(a2, 0, MAX2 - 1);
         gettimeofday(&after2, NULL);
         tmp[i] = (double)(after2.tv_sec) + (double)(after2.tv_usec) / 1000000.0 - (double)(before2.tv_sec) - (double)(before2.tv_usec) / 1000000.0;
     }
@@ -59,7 +48,7 @@ int main() {
     
     for(int i=0;i<5;i++){
         gettimeofday(&before3, NULL);
-        exchange_sort(a3, MAX3);
+        quick_sort(a3, 0, MAX3 - 1);
         gettimeofday(&after3, NULL);
         tmp[i] = (double)(after3.tv_sec) + (double)(after3.tv_usec) / 1000000.0 - (double)(before3.tv_sec) - (double)(before3.tv_usec) / 1000000.0;
     }
@@ -68,7 +57,7 @@ int main() {
  
     for(int i=0;i<5;i++){
         gettimeofday(&before4, NULL);
-        exchange_sort(a4, MAX4);
+        quick_sort(a4, 0, MAX4 - 1);
         gettimeofday(&after4, NULL);
         tmp[i] = (double)(after4.tv_sec) + (double)(after4.tv_usec) / 1000000.0 - (double)(before4.tv_sec) - (double)(before4.tv_usec) / 1000000.0;
     }
@@ -77,7 +66,7 @@ int main() {
     
     for(int i=0;i<5;i++){
         gettimeofday(&before5, NULL);
-        exchange_sort(a5, MAX5);
+        quick_sort(a5, 0, MAX5 - 1);
         gettimeofday(&after5, NULL);
         tmp[i] = (double)(after5.tv_sec) + (double)(after5.tv_usec) / 1000000.0 - (double)(before5.tv_sec) - (double)(before5.tv_usec) / 1000000.0;
     }

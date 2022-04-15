@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define MAX 100
+#define MAX 10000
 
 void radix_sort(int* list, int n) {
 	int result[MAX], maxValue = 0;

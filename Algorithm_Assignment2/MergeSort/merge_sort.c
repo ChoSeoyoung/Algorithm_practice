@@ -1,8 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#define MAX 10000
-int sorted[MAX];//추가적인 공간 필요
+
+#include "merge_sort.h"
+
+#define MAX1 100
+#define MAX2 500
+#define MAX3 1000
+#define MAX4 5000
+#define MAX5 10000
+
+int sorted[MAX5];//추가적인 공간 필요
 
 void merge(int list[], int low, int mid, int high) {
     int l = low;
@@ -44,22 +50,4 @@ void merge_sort(int list[], int low, int high) {
         merge_sort(list, mid + 1, high); // 뒤쪽 부분 리스트 정렬 -정복(Conquer)
         merge(list, low, mid, high); // 정렬된 2개의 부분 배열을 합병하는 과정 -결합(Combine)
     }
-}
-
-void main() {
-    int list[MAX];
-    clock_t before;
-    double result;
-
-    srand(time(NULL));
-    for (int i = 0; i < MAX; i++) {
-        list[i] = rand() % MAX;
-    }
-
-
-    before = clock();
-    merge_sort(list, 0, MAX - 1);
-    result = (double)(clock() - before) / CLOCKS_PER_SEC;
-    printf("걸린시간은 %5.5f 입니다.", result);
-    return 0;
 }
