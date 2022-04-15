@@ -1,40 +1,50 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define MAX 10000
 
-void radix_sort(int* list, int n) {
-	int result[MAX], maxValue = 0;
-	int exp = 1;
-	for (int i = 0; i < n; i++) {
-		if (list[i] > maxValue) maxValue = list[i];
+typedef struct nodetype {
+	int key;
+	struct nodetype* link;
+}NODE;
+
+void distribute(int* masterlist, int size, int exp, NODE* list[]) {
+	for (int i = 0; i < 10; i++) { //더미를 비운다
+		list[i] = NULL;
 	}
-	while (maxValue / exp > 0) { // 1의 자릿수 계산
-		int bucket[10] = { 0 };
-		for (int i = 0; i < n; i++) bucket[list[i] / exp % 10]++; // 자릿수 배열 처리
-		for (int i = 1; i < 10; i++)bucket[i] += bucket[i - 1]; // 누적 계산 : 결과 배열을 만들기 위해서!	
-		for (int i = n - 1; i >= 0; i--) { //같은 자릿수 끼리는 순서를 유지
-			result[--bucket[list[i] / exp % 10]] = list[i];
-		}
-		for (int i = 0; i < n; i++) list[i] = result[i]; // 기본 배열 갱신
-		exp *= 10;
+
+	for (int i = 0; i < size; i++) {
+		int idx = (masterlist[i] / exp)%10;
+		NODE* tmp = (NODE*)malloc(sizeof(NODE*));
+		tmp->key = masterlist[i];
+		tmp->link = list[idx];
+		list[idx] = tmp;
 	}
 }
 
-int main(void) {
-	int list[MAX];
-	clock_t before;
-	double result;
+void coalesce(int* masterlist, NODE* list[]) {
+	int idx = 0;
+	for (int i = 0; i < 10; i++) {
+		for (NODE* tmp = list[i]; tmp != NULL; tmp = tmp->link) {
+			masterlist[idx++] = tmp->key;
+		}
+	}
+}
 
-	srand(time(NULL));
-	for (int i = 0; i < MAX; i++) {
-		list[i] = rand() % MAX;
+void radix_sort(int* masterlist, int size, int numdigits) {
+	NODE* list[10];
+	for (int i = 0; i < 10; i++) {
+		list[i] = (NODE*)malloc(sizeof(NODE*));
+		list[i]->key = NULL;
+		list[i]->link = NULL;
 	}
 
-
-	before = clock();
-	radix_sort(list, MAX);
-	result = (double)(clock() - before) / CLOCKS_PER_SEC;
-	printf("걸린시간은 %5.5f 입니다.", result);
-	return 0;
+	int exp = 1;
+	for (int i = 0; i < numdigits; i++) {
+		exp *= 10;
+	}
+	for (int i = 0; i < numdigits; i++) {
+		distribute(masterlist, size, exp, list);
+		coalesce(masterlist, list);
+		exp /=10;
+	}
 }
