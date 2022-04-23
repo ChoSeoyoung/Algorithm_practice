@@ -29,6 +29,8 @@ void merge(int n, keytype S[]){
     mergesort(m, V);
     merge(h,m,U,V,S);
 }
+</code></pre>
+<pre><code>
 void merge(int h, int n, const keytype U[], const keytype V[], keytype S[]){
     index i,j,k;
     i,j,k=1;
@@ -50,4 +52,3 @@ void merge(int h, int n, const keytype U[], const keytype V[], keytype S[]){
     }
 }
 </code></pre>
-
