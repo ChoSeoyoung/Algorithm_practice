@@ -20,6 +20,34 @@ n-1∈θ(n^(log_2^2))이므로 Master method case2에 해당한다.
 
 ## Pseudocode of HeapSort
 <pre><code>
-sdfsdd
+void merge(int n, keytype S[]){
+    const int h=n/2, m=n-h;
+    keytype U[1...h], V[1...m];
+    copy S[1] through S[h] to U[1] through U[h];
+    copy S[h+1] through S[n] to V[1] through V[m];
+    mergesort(h, U);
+    mergesort(m, V);
+    merge(h,m,U,V,S);
+}
+void merge(int h, int n, const keytype U[], const keytype V[], keytype S[]){
+    index i,j,k;
+    i,j,k=1;
+    
+    while(i<=h && j<=m){
+        if(U[i]<=V[i]){
+            S[k]=U[i];
+            i++;
+        }else{
+            S[k]=V[j];
+            j++;
+        }
+        k++;
+    }
+    if(i<=h){
+        copy U[i] through U[h] to S[k] through S[h+m];
+    }else{
+        copy V[j] through V[m] to S[k] through S[h+m]
+    }
+}
 </code></pre>
 
