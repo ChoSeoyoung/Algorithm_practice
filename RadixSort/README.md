@@ -31,7 +31,7 @@ void radixsort(node_pointer& masterlist, int numdigits){
     index i;
     node_pointer list[0...9];
 
-    for(i=0;i<=9;i++){
+    for(i=1>;i<=numdigits;i++){
         distribution(masterlist, list, i);
         coalesce(materlist, list);
     }
