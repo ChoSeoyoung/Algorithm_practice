@@ -9,6 +9,9 @@
 - pivot을 기준으로 pivot보다 작은 원소는 pivot의 왼쪽으로, pivot보다 큰 원소는 pivot의 오른쪽으로 옮긴다.
 - pivot을 제외한 왼쪽 리스트와 오른쪽 리스트를 다시 정렬한다.
 
+### 추가 공간
+퀵 정렬도 MergeSort와 같이 in-place sort가 아니다. pivot를 기억할 O(lgn)의 추가적인 공간을 더 필요로 한다.
+
 ## 시간 복잡도
 worst case의 recursion equation은 다음과 같다.
 W(n)=W(0)+W(n-1)+n-1
@@ -19,7 +22,7 @@ worst case의 시간복잡도가 아닌, average case의 시간복잡도는 다�
 A(n)=∑_(p=1)^n(1/n[A(n-1)+A(p-1)])+n-1
     =2/n∑_(p=1)^n(A(p-1))+n-1
 nA(n)=2∑_(p=1)^n(A(p-1))+n(n-1)
-(n-1)A(n-1)=∑_(p=1)^n(A(p-1))+(n-1)(n-2)
+(n-1)A(n-1)=2∑_(p=1)^n(A(p-1))+(n-1)(n-2)
 nA(n)-(n-1)A(n-1)=2A(n-1)+2(n-1)
 nA(n)=(n+1)A(n+1)+2(n-1)
 (A)/(n+1)=A(n+1)/n+2(n-1)/n(n+1)
@@ -27,3 +30,34 @@ a_n=A(n)/n+1
 a_n=a_n-1+2(n-1)/n(n+1)=∑_(i=1)^n(2(i-1)/i(i+1))=2∑_(i=1)^n(1/i)=2lgn
 A(n)=2(n+1)lgn
 A(n)∈θ(nlgn)
+
+## Pseudocode of QuickSort
+<pre><code>
+void partition(index low, index high, index& pivotpoint){
+    index i,j;
+    keytype pivotitem;
+
+    pivotitem=S[low];
+    j=low;
+    for(i=low+1;i<=high;i++){
+        if(S[i] < pivotitem){
+            j++;
+            exchange S[i] and S[j];
+        }
+    }
+
+    pivotpoint=j;
+    exchange S[low] and S[pivotpoint];
+}
+</code></pre>
+<pre><code>
+void quicksort(index low, high){
+    index pivotpoint;
+
+    if(low < high){
+        partition(low, high, pivotpoint);
+        quicksort(low, pivotpoint);
+        quicksort(pivotpoint+1, high);
+    }
+}
+</code></pre>
