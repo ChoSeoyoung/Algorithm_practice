@@ -67,31 +67,39 @@ int chained_mul_matrix(int n, const int d[], index P[][]){
     return M[1][n];
 }
 </code></pre>
+시간복잡도는 O(n^3)이다.
+![image](https://user-images.githubusercontent.com/74875490/165030068-30ac10cf-28f8-4af6-b32b-0c87c4179517.png)
+=>(A1((((A2A3)A4)A5)A6))
 
 ## Optimal binary search trees
+### 이분검색트리(binary search trees)
+1. 각 마디는 하나의 원소만 가지고 있다.
+2. 마디의 왼쪽 하위트리에 있는 원소들은 모두 그 마디의 원소보다 작거나 같다.
+3. 마디의 오른쪽 하위트리에 있는 원소들은 모두 그 마디의 원소보다 크거나 같다.
 <pre><code>
 int opt_bin_search_tree(int n, const float p[], index P[][]){
     index i,j,k,diagonal;
-    int A[1...n][1...n];
 
     for(i=1;i<=n;i++){
         A[i][i-1]=0;
-        A[i][i]=p[i];
+        A[i][i]=pi;
         P[i][i-1]=0;
         P[i][i]=i;
     }
     for(diagonal=1;diagonal<=n-1;diagonal++){
         for(i=1;i<=n-diagonal;i++){
             j=i+diagonal;
-            A[i][j]=minimum(i<=k<=j)(A[i][k-1]+A[k+1][j])+시그마(m=1,m=j)pm;
+            A[i][j]=minimum(i<=k<=j)(A[i][k-1]+A[k-1][j])+시그마(m=1, m=1)pm;
             P[i][j]=최소가 되는 k값;
         }
     }
+
     return A[1][n];
 }
 </code></pre>
 
 ## Knapsack problem
+![image](https://user-images.githubusercontent.com/74875490/165034332-fb0ac022-ff50-447a-9d0d-43e547209a70.png)
 <pre><code>
 V(1,j)=if wi>j 이면, V(i-1, j)
         else maximum(V(i-1,j), V(i-1,j-wi)+vi)
@@ -103,6 +111,7 @@ D(k)(i,j)=minimum(D(k-1)(i,j),D(k-1)(i,k)+D(k-1)(k,j))
 </code></pre>
 
 ## Sequence alignment
+![image](https://user-images.githubusercontent.com/74875490/165037645-4c3fda82-1f0f-4acb-b62c-170abbc19a75.png)
 <pre><code>
 void seq_align(int m, int i, const char x[], const char y[]){
     if(i==m) opt=2(n-j);
