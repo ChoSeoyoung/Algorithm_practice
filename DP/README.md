@@ -108,6 +108,15 @@ V(1,j)=if wi>j 이면, V(i-1, j)
 ## Floyd's algorithm for shortest paths
 <pre><code>
 D(k)(i,j)=minimum(D(k-1)(i,j),D(k-1)(i,k)+D(k-1)(k,j))
+void floyd(int n, const number W[][], number D[][]){
+    index i,j,;
+    D=W;
+    
+    for(k=1;k<=n;k++)
+        for(i=1;i<=n;i++)
+            for(j=1;j<=n;j++)
+                D[i][j]=minimum(D[i][k]+D[k][j]);
+}
 </code></pre>
 
 ## Sequence alignment
