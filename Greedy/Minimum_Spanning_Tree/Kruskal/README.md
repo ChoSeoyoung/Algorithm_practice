@@ -1,4 +1,10 @@
 # Kruskal's Algorithm
+크루스칼 알고리즘(Kruskal's Algorithm)은 각 마디마다 자신만 포함하는 V의 서로소 부분집합들을 만드는 걸로 시작한다. 그리고 가중치가 작은 것부터 차례로 이음선을 검사한다.(가중치가 같으면 임의로 선택한다.) 만약 어떤 이음선이 서로소 부분집합들에 있는 두 마디를 연결하면 그 이음선을 추가하고, 두 부분집합을 하나로 합친다. 다음은 이 절차를 고수준으로 표현한 알고리즘이다.
+
+<pre><code>
+
+</code></pre>
+
 <pre><code>
 void kruskal(int n, int m, set_of_edges E, set_of_efges& F){
     int i, j;
