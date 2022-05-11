@@ -1,4 +1,4 @@
-# Prim Algorithm
+# Prim's Algorithm
 <pre><code>
 void prim(int n, const number W[][], set_of_edges& F){
     index i, vnear;
