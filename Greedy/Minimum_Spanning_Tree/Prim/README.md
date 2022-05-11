@@ -39,3 +39,8 @@ void prim(int n, const number W[][], set_of_edges& F){
     }
 }
 </code></pre>
+
+## prim's algorithm example
+![image](https://user-images.githubusercontent.com/74875490/167955799-a1e88d4b-ec8a-4382-b7f2-15bc131c0947.png)
+![image](https://user-images.githubusercontent.com/74875490/167955725-8d39c6d6-9cd3-4cff-af68-f359a3b7fe7a.png)
+![image](https://user-images.githubusercontent.com/74875490/167956367-c61ebe1e-419e-4365-a193-e28c35d6e773.png)
