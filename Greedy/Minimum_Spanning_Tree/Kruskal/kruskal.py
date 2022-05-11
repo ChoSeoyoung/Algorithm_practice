@@ -42,6 +42,7 @@ def kruskal(N, W):
                     distance[W[i][j]].append((i,j))
 
     no_edge=0
+    print("Edge : Weight\n")
     while(no_edge < N-1):
         tmp_key=sorted(distance)[0]
         tmp=distance.pop(tmp_key)

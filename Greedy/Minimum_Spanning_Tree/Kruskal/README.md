@@ -41,3 +41,8 @@ void kruskal(int n, int m, set_of_edges E, set_of_efges& F){
 
 }
 </code></pre>
+
+## kruskal's algorithm example
+![image](https://user-images.githubusercontent.com/74875490/167955799-a1e88d4b-ec8a-4382-b7f2-15bc131c0947.png)
+![image](https://user-images.githubusercontent.com/74875490/167956009-4adda6ce-4a19-4717-91e3-9d9caff746dd.png)
+![image](https://user-images.githubusercontent.com/74875490/167956845-7581a611-1d10-4062-a82c-6a66ba7c21a6.png)
