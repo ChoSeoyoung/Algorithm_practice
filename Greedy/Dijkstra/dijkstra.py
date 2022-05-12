@@ -5,11 +5,21 @@ INF = 9999999
 N = 5
 
 # creating graph by adjacency matrix method
-W = [[0,7,4,6,1],
-     [0,0,0,0,0],
-     [0,2,0,5,0],
-     [0,3,0,0,0],
-     [0,0,0,1,0]]
+W = [[INF,7,4,6,1],
+     [INF,INF,INF,INF,INF],
+     [INF,2,INF,5,INF],
+     [INF,3,INF,INF,INF],
+     [INF,INF,INF,1,INF]]
+W2 = [[INF,4,1,5,INF],
+     [INF,INF,INF,INF,2],
+     [INF,INF,INF,2,3],
+     [INF,3,INF,INF,7],
+     [INF,INF,INF,INF,INF]]
+W3 = [[INF,7,1,5,INF],
+     [INF,INF,INF,INF,INF],
+     [INF,INF,INF,3,INF],
+     [INF,2,INF,INF,1],
+     [INF,1,INF,INF,INF]]
 
 # result
 touch=[0,-1,-1,-1,-1]
@@ -36,13 +46,14 @@ def dijkstra(N, W):
         result.append(vnear)
 
         for i in range(1, N, 1):
-            if(W[vnear][i]>0):
-                if(length[vnear]+W[vnear][i]<length[i]):
-                    length[i]=length[vnear]+W[vnear][i]
-                    touch[i]=vnear
+            if(length[vnear]+W[vnear][i]<length[i]):
+                length[i]=length[vnear]+W[vnear][i]
+                touch[i]=vnear
         length[vnear]=-1
         
         no_edge+=1
 
-dijkstra(N, W)
-print(result)
+dijkstra(N, W3)
+print("0",end=' ')
+for i in result:
+    print("->", i, end=' ')
