@@ -44,7 +44,7 @@ void checknode(node v){
        <3,4>는 유망하지 않다.
 - (h): 뿌리로 되추적
        <1,2>는 유망하다.
-![image](https://user-images.githubusercontent.com/74875490/168473898-a86d1dc4-2a81-4fdf-add1-22e99223af21.png)
+![image](https://user-images.githubusercontent.com/74875490/168474259-f1e9b826-3a54-40f2-9405-960d1814cd74.png)
 - (i): <2,1>는 유망하지 않다.
        <2,2>는 유망하지 않다.
        <2,3>은 유망하지 않다.
