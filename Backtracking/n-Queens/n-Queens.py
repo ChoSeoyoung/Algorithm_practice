@@ -1,29 +1,30 @@
+import sys
+
+N=int(sys.stdin.readline())
+
+#col은 i번째 행에 있는 여왕말이 놓여 있는 열
+col=[0 for i in range(N)]
+
 ss=[]
 def queens(i):
+    ss.append((i,col[i]))
     if promising(i):
         #i번째 행이 유망하면
         #i+1째 행에 어떤 열에 queen을 놓을지 결정
-        ss.append((i,col[i]))
-        if(i==N-1):
+        if(i==N-1):     
             return 0
         else:
             queens(i+1)
-    else:
-        #i번째 행이 유망하지 않으면
-        #스택에서 pop하면서 되추적한다.
-        ss.append((i,col[i]))
-        
-        val=3
-        while(val>=3):
+    else:        
+        val = N-1
+        while(val>=N-1):
             idx, val = ss.pop()
-        for i in range(idx+1,N):
+        for i in range(idx+1, N):
             col[i]=0
-        
-        #되추적
+
         col[idx]=val+1
         queens(idx)
 
-            
 def promising(i):
     idx=0
     switch=True
@@ -32,3 +33,6 @@ def promising(i):
             switch=False
         idx+=1
     return switch
+
+queens(0)
+print(col)
