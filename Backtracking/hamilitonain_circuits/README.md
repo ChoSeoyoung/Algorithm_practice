@@ -10,7 +10,11 @@ void hamiltonian(index i){
 
     if(promising(i)){
         if(i==n-1)
+<<<<<<< HEAD
             print vindex[0]에서 vindex[n-1]까지;
+=======
+            cout<<vindex[0]에서 vindex[n-1]까지;
+>>>>>>> 397c72ccb3aa2c842337830386662a562fd1a1ae
         else
             for(j=2;i<=n;j++){
                 vindex[i+1]=j;
