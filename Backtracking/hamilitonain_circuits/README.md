@@ -12,7 +12,7 @@ void hamiltonian(index i){
         if(i==n-1)
             cout<<vindex[0]에서 vindex[n-1]까지;
         else
-            for(j=2;i<=n;j++){ //모든 정점의 다음 정점을 시도해본다.
+            for(j=2;i<=n;j++){
                 vindex[i+1]=j;
                 hamiltonian[i+1];
             }
