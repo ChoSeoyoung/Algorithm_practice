@@ -44,5 +44,5 @@ void dijkstra(int n, const number W[][], set_of_edges& F){
 ![image](https://user-images.githubusercontent.com/74875490/169002502-f0ab2ac1-9100-44db-b748-5afafb813e76.png)
 
 ## case3
+![image](https://user-images.githubusercontent.com/74875490/169004416-4caf3489-d4fe-4607-ba59-56972b92b958.png)
 ![image](https://user-images.githubusercontent.com/74875490/169004043-69268176-8857-4cb6-862b-57b842b1fd04.png)
-![image](https://user-images.githubusercontent.com/74875490/168998400-2ab8688a-2034-41ae-8c28-bd82788d9973.png)
