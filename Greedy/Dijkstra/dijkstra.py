@@ -1,4 +1,3 @@
-# Dijkstra's Algorithm in Python
 INF = 9999999
 
 # number of vertices in graph
@@ -23,15 +22,17 @@ W3 = [[INF,7,1,5,INF],
 
 # result
 length=[0,0,0,0,0]
+nearest=[-1,-1,-1,-1,-1]
 result=[]
 
 # printing for edge and weight
 def dijkstra(N, W):
     no_edge = 0
-    vnear=0
+    vnear = 0
 
     for i in range(1, N, 1):
         length[i]=W[0][i]
+        nearest[i]=0
 
     while (no_edge < N - 1):
         minimum = INF
@@ -40,16 +41,29 @@ def dijkstra(N, W):
             if(0<length[i] and length[i]<minimum):
                 minimum=length[i]
                 vnear=i  
-        result.append(vnear)
 
         for i in range(1, N, 1):
             if(length[vnear]+W[vnear][i]<length[i]):
                 length[i]=length[vnear]+W[vnear][i]
+                nearest[i]=vnear
+
         length[vnear]=-1
+        result.append(vnear)
         
         no_edge+=1
 
-dijkstra(N, W3)
-print("0",end=' ')
-for i in result:
-    print("->", i, end=' ')
+    return vnear
+
+vertex=dijkstra(N, W)
+print([0]+result)
+final_result=[vertex]
+while(True):
+    if(nearest[vertex]==-1):
+        break
+    else:
+        final_result.append(nearest[vertex])
+        vertex=nearest[vertex]
+
+print(final_result[-1]+1,end=' ')
+for i in list(reversed(final_result))[1::]:
+    print("->", i+1, end=' ')
