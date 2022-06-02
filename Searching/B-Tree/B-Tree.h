@@ -1,7 +1,7 @@
 #ifndef _BTREE_HEADER_H
 #define _BTREE_HEADER_H
 
-#define M 9
+#define M 5
 #define max_children M
 #define max_keys max_children-1
 #define min_keys (int)(ceil(M/2.0))-1 // 최소 키개수 구하는 식

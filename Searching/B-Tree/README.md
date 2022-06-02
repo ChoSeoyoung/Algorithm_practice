@@ -35,6 +35,12 @@ key를 삽입하기 위해서는 1. 요소 삽입에 적절한 리프 노드를 
 ![image](https://user-images.githubusercontent.com/74875490/171677335-bb0bca26-14b3-4703-ac6a-62c592f82140.png)<br>
 ![image](https://user-images.githubusercontent.com/74875490/171677724-c6eba708-7430-45fe-a92d-8172fbe41f68.png)<br>
 
+## 삭제
+만약 삭제할 키가 리프 노드라면 단순삭제 한다.
+내부 노드의 경우, 힙 sort의 삭제 연산과 비슷한데, 자식을 찾아 바꾼 후 삭제한다.
+![image](https://user-images.githubusercontent.com/74875490/171679193-cf3d23be-08b2-4878-976b-91822f2dcd48.png)<br>
+![image](https://user-images.githubusercontent.com/74875490/171679363-7f831483-17c7-4b45-88e0-0ae578528216.png)<br>
 
 ## 참고
-https://velog.io/@emplam27/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-B-Tree
+https://velog.io/@emplam27/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EA%B7%B8%EB%A6%BC%EC%9C%BC%EB%A1%9C-%EC%95%8C%EC%95%84%EB%B3%B4%EB%8A%94-B-Tree<br>
+https://stonesy927.tistory.com/203
