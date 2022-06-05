@@ -1,0 +1,303 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-pc-mingw32
+ 
+
+# ����ũ ����Ÿ���̽�, Sun Jun 05 10:31:48 2022
+�� ǥ��
+# ����
+
+# �ڵ�
+<D = $(patsubst %/,%,$(dir $<))
+# �ڵ�
+?F = $(notdir $?)
+# ����ũ����
+MAKEFLAGS = Rrqp
+# ȯ��
+VSCODE_LOG_NATIVE = false
+# �ڵ�
+?D = $(patsubst %/,%,$(dir $?))
+# �ڵ�
+@D = $(patsubst %/,%,$(dir $@))
+# ȯ��
+HOMEDRIVE = C:
+# �ڵ�
+@F = $(notdir $@)
+# �ڵ�
+^D = $(patsubst %/,%,$(dir $^))
+# ����ũ����
+CURDIR := c:/Users/Cho/Desktop/Algorithm_Practice
+# �⺻��
+SHELL := sh.exe
+# ȯ��
+WINDIR = C:\WINDOWS
+# ȯ��
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"738ac08552cca045871a73764b8c446f.ko","_translationsConfigFile":"C:\\Users\\Cho\\AppData\\Roaming\\Code\\clp\\738ac08552cca045871a73764b8c446f.ko\\tcf.json","_cacheRoot":"C:\\Users\\Cho\\AppData\\Roaming\\Code\\clp\\738ac08552cca045871a73764b8c446f.ko","_resolvedLanguagePackCoreLocation":"C:\\Users\\Cho\\AppData\\Roaming\\Code\\clp\\738ac08552cca045871a73764b8c446f.ko\\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"C:\\Users\\Cho\\AppData\\Roaming\\Code\\clp\\738ac08552cca045871a73764b8c446f.ko\\corrupted.info","_languagePackSupport":true}
+# ȯ��
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# ȯ��
+ONEDRIVE = C:\Users\Cho\OneDrive
+# ȯ��
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# ����ũ����
+MAKEFILE_LIST := 
+# ȯ��
+TMP = C:\Users\Cho\AppData\Local\Temp
+# ȯ��
+VSCODE_VERBOSE_LOGGING = true
+# ȯ��
+PROGRAMW6432 = C:\Program Files
+# ȯ��
+PROGRAMDATA = C:\ProgramData
+# ȯ��
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-6f5d424d-ccdc-452c-b167-4f56bc8e70d9-sock
+# ȯ��
+VSCODE_CWD = C:\Users\Cho\AppData\Local\Programs\Microsoft VS Code
+# ȯ��
+PATH = C:\Program Files (x86)\VMware\VMware Player\bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\PuTTY\;C:\Program Files (x86)\GnuWin32\bin;C:\mingw64\bin;C:\Users\Cho\Documents\Virtual Machines\Ubuntu;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\Java\jdk-11.0.13\bin;C:\Users\Cho;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Cho\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Cho\AppData\Local\Programs\Python\Python310\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Cho\AppData\Local\Microsoft\WindowsApps;C:\Users\Cho\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\IntelliJ\IntelliJ IDEA Community Edition 2021.2.2\bin;;C:\Users\Cho\AppData\Roaming\npm;C:\venvs;
+# ȯ��
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# ȯ��
+ZES_ENABLE_SYSMAN = 1
+# ȯ��
+PROCESSOR_ARCHITECTURE = x86
+# ȯ��
+USERPROFILE = C:\Users\Cho
+# ȯ��
+ALLUSERSPROFILE = C:\ProgramData
+# ȯ��
+VSCODE_LOG_STACK = false
+# ȯ��
+NUMBER_OF_PROCESSORS = 8
+# ȯ��
+ELECTRON_RUN_AS_NODE = 1
+# �⺻��
+.FEATURES := target-specific order-only second-expansion else-if archives
+# �ڵ�
+%F = $(notdir $%)
+# ȯ��
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_17344_ZIUPCFTBUAYXSLPA
+# ȯ��
+VSCODE_PIPE_LOGGING = true
+# ȯ��
+COMPUTERNAME = DESKTOP-1G0FDKN
+# ȯ��
+PROGRAMFILES = C:\Program Files (x86)
+# ȯ��
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# ȯ��
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# ȯ��
+USERNAME = Cho
+# ȯ��
+PUBLIC = C:\Users\Public
+# ȯ��
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# ȯ��
+VSCODE_CODE_CACHE_PATH = C:\Users\Cho\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# ȯ��
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# ȯ��
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# ȯ��
+LOGONSERVER = \\DESKTOP-1G0FDKN
+# ȯ��
+ONEDRIVECONSUMER = C:\Users\Cho\OneDrive
+# ȯ��
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# ȯ��
+USERDOMAIN = DESKTOP-1G0FDKN
+# ȯ��
+INTELLIJ IDEA COMMUNITY EDITION = C:\Program Files\IntelliJ\IntelliJ IDEA Community Edition 2021.2.2\bin;
+# �⺻��
+MAKE = $(MAKE_COMMAND)
+# �⺻��
+MAKECMDGOALS := all
+# ȯ��
+JAVA_HOME = C:\Program Files\Java\jdk-11.0.13\bin
+# �⺻��
+MAKE_VERSION := 3.81
+# ����ũ����
+.DEFAULT_GOAL := 
+# ȯ��
+CLASSPATH = .;C:\Program Files\Java\jdk-11.0.13\bin\lib
+# ȯ��
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# �ڵ�
+%D = $(patsubst %/,%,$(dir $%))
+# ȯ��
+LOCALAPPDATA = C:\Users\Cho\AppData\Local
+# ȯ��
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# �⺻��
+MAKE_COMMAND := make.exe
+# ȯ��
+PROCESSOR_ARCHITEW6432 = AMD64
+# �⺻��
+.VARIABLES := 
+# �ڵ�
+*F = $(notdir $*)
+# ȯ��
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 126 Stepping 5, GenuineIntel
+# ȯ��
+OS = Windows_NT
+# ȯ��
+VSCODE_IPC_HOOK = \\.\pipe\eab8211efc7d3a94b6e282cd624fed9a-1.67.2-main-sock
+# ȯ��
+HOMEPATH = \Users\Cho
+# ȯ��
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# ȯ��
+PROMPT = $P$G
+# ȯ��
+MFLAGS = -Rrqp
+# �ڵ�
+*D = $(patsubst %/,%,$(dir $*))
+# ȯ��
+SYSTEMROOT = C:\WINDOWS
+# �ڵ�
++D = $(patsubst %/,%,$(dir $+))
+# �ڵ�
++F = $(notdir $+)
+# ȯ��
+APPDATA = C:\Users\Cho\AppData\Roaming
+# ȯ��
+TEMP = C:\Users\Cho\AppData\Local\Temp
+# ȯ��
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# �⺻��
+MAKEFILES := 
+# �ڵ�
+<F = $(notdir $<)
+# ȯ��
+VS160COMCOMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\
+# ȯ��
+LC_ALL = C
+# �ڵ�
+^F = $(notdir $^)
+# �⺻��
+SUFFIXES := 
+# ȯ��
+SYSTEMDRIVE = C:
+# ȯ��
+SESSIONNAME = Console
+# ȯ��
+PROCESSOR_REVISION = 7e05
+# ȯ��
+MAKELEVEL := 0
+# ȯ��
+LANG = C
+# ȯ��
+PROCESSOR_LEVEL = 6
+# ȯ��
+VSCODE_PID = 17344
+# ȯ��
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-1G0FDKN
+# variable set hash-table stats:
+# Load=93/1024=9%, Rehash=0, Collisions=9/110=8%
+
+# Pattern-specific Variable Values
+
+# ������ ���� ���� ������ �����ϴ�.
+
+# ���丮
+
+# : stat�� �� �� �������ϴ�.
+# C:\Program Files\Common Files\Oracle\Java\javapath (Ű C:/Program Files/Common Files/Oracle/Java/javapath, ����ð� 1644425447): 6 ����, 0�� �Ұ���.
+# C:\Users\Cho\Documents\Virtual Machines\Ubuntu (Ű C:/Users/Cho/Documents/Virtual Machines/Ubuntu, ����ð� 1653530716): 22 ����, 0�� �Ұ���.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (Ű C:/WINDOWS/System32/WindowsPowerShell/v1.0/, ����ð� 1631688058): 31 ����, 0�� �Ұ���.
+# C:\WINDOWS\System32\Wbem (Ű C:/WINDOWS/System32/Wbem, ����ð� 1647195817): 155 ����, 0�� �Ұ���.
+# . (Ű c:/Users/Cho/Desktop/Algorithm_Practice, ����ð� 1654054612): 15 ����, 0�� �Ұ���.
+# C:\Users\Cho\AppData\Local\Microsoft\WindowsApps (Ű C:/Users/Cho/AppData/Local/Microsoft/WindowsApps, ����ð� 1653634171): 17 ����, 0�� �Ұ���.
+# C:\Program Files\MySQL\MySQL Server 5.7\bin (Ű C:/Program Files/MySQL/MySQL Server 5.7/bin, ����ð� 1635686452): 34 ����, 0�� �Ұ���.
+# C:\Program Files\nodejs\ (Ű C:/Program Files/nodejs/, ����ð� 1645268044): 13 ����, 0�� �Ұ���.
+# C:\Program Files\MySQL\MySQL Shell 8.0\bin\ (Ű C:/Program Files/MySQL/MySQL Shell 8.0/bin/, ����ð� 1635686940): 8 ����, 0�� �Ұ���.
+# C:\venvs (Ű C:/venvs, ����ð� 1651066097): 4 ����, 0�� �Ұ���.
+# C:\Users\Cho\AppData\Roaming\npm (Ű C:/Users/Cho/AppData/Roaming/npm, ����ð� 1647150358): 12 ����, 0�� �Ұ���.
+# C:\WINDOWS\System32\OpenSSH\: stat�� �� �� �������ϴ�.
+# C:\Program Files\Java\jdk-11.0.13\bin (Ű C:/Program Files/Java/jdk-11.0.13/bin, ����ð� 1644425443): 124 ����, 0�� �Ұ���.
+# C:\mingw64\bin (Ű C:/mingw64/bin, ����ð� 1526110174): 58 ����, 0�� �Ұ���.
+# C:\WINDOWS (Ű C:/WINDOWS, ����ð� 1654392668): 123 ����, 0�� �Ұ���.
+# C:\Program Files\IntelliJ\IntelliJ IDEA Community Edition 2021.2.2\bin (Ű C:/Program Files/IntelliJ/IntelliJ IDEA Community Edition 2021.2.2/bin, ����ð� 1633446520): 31 ����, 0�� �Ұ���.
+# C:\Users\Cho\AppData\Local\Programs\Python\Python310\ (Ű C:/Users/Cho/AppData/Local/Programs/Python/Python310/, ����ð� 1640015895): 18 ����, 0�� �Ұ���.
+# C:\Program Files\Git\cmd (Ű C:/Program Files/Git/cmd, ����ð� 1645726227): 8 ����, 0�� �Ұ���.
+# C:\WINDOWS\system32 (Ű C:/WINDOWS/system32, ����ð� 1654301225): 2953 ����, 0�� �Ұ���.
+# C:\Users\Cho\AppData\Local\Programs\Python\Python310\Scripts\ (Ű C:/Users/Cho/AppData/Local/Programs/Python/Python310/Scripts/, ����ð� 1651071592): 7 ����, 0�� �Ұ���.
+# C:\Program Files (x86)\VMware\VMware Player\bin\ (Ű C:/Program Files (x86)/VMware/VMware Player/bin/, ����ð� 1652094000): 4 ����, 0�� �Ұ���.
+# C:\Users\Cho\AppData\Local\Programs\Microsoft VS Code\bin (Ű C:/Users/Cho/AppData/Local/Programs/Microsoft VS Code/bin, ����ð� 1653009207): 4 ����, 0�� �Ұ���.
+# C:\Program Files (x86)\PuTTY\ (Ű C:/Program Files (x86)/PuTTY/, ����ð� 1631812188): 12 ����, 0�� �Ұ���.
+# C:\Users\Cho (Ű C:/Users/Cho, ����ð� 1654332418): 100 ����, 0�� �Ұ���.
+# C:\Program Files (x86)\GnuWin32\bin (Ű C:/Program Files (x86)/GnuWin32/bin, ����ð� 1646684867): 7 ����, 0�� �Ұ���.
+
+# 3766 ����, 0�� impossibilities in 26 directories.
+
+# Implicit Rules
+
+# ������ ��Ģ ����.
+
+# ����
+
+# Ÿ���� �ƴ�:
+all:
+#  ������ Ÿ��.
+#  ������ ��Ģ Ž���� �Ϸ�Ǿ����ϴ�.
+#  ������ �������� �ʽ��ϴ�.
+#  ������ ���ŵ��� �ʾҽ��ϴ�.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Ÿ���� �ƴ�:
+.DEFAULT:
+#  ������ ��Ģ Ž���� �Ϸ���� �ʾҽ��ϴ�.
+#  ���� �ð��� ���� �˻���� �ʾ���.
+#  ������ ���ŵ��� �ʾҽ��ϴ�.
+
+# Ÿ���� �ƴ�:
+makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  ������ ��Ģ Ž���� �Ϸ�Ǿ����ϴ�.
+#  ������ �������� �ʽ��ϴ�.
+#  ������ ���ŵǾ����ϴ�.
+#  ���ſ� ������.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Ÿ���� �ƴ�:
+.SUFFIXES:
+#  ������ ��Ģ Ž���� �Ϸ���� �ʾҽ��ϴ�.
+#  ���� �ð��� ���� �˻���� �ʾ���.
+#  ������ ���ŵ��� �ʾҽ��ϴ�.
+
+# Ÿ���� �ƴ�:
+GNUmakefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
+#  ������ ��Ģ Ž���� �Ϸ�Ǿ����ϴ�.
+#  ������ �������� �ʽ��ϴ�.
+#  ������ ���ŵǾ����ϴ�.
+#  ���ſ� ������.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=5/1024=0%, Rehash=0, Collisions=0/16=0%
+# VPATH Ž�� ���
+
+# `vpath' Ž�� ��ΰ� ����.
+
+# �Ϲ����� (`VPATH' ����) Ž�� ��ΰ� ����.
+
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+
+# ����ũ ����Ÿ ���̽� ��ħ, Sun Jun 05 10:31:48 2022
+����
+ 
+make.exe: *** Ÿ�� `all'�� ���� ��Ģ�� ����.  ����.
+
