@@ -2,7 +2,13 @@
 외판원 문제의 경우 동적 계획 알고리즘을 활용하여 20개의 도시를 모두 돌고 돌아오는 것을 계산하는데, 다음과 같은 시간 복잡도를 가진다.
 ![image](https://user-images.githubusercontent.com/74875490/168943421-6dc273ec-9f69-4692-bdc4-ef93608f0c18.png)
 
-이때, 도시의 개수가 40개로 늘어난다면 어떨까? 이 경우, 그냥 아무 경로나 선택하더라도 모든 도시를 한번씩 돌고 오는 경우를 찾는 것이 더 효율적이다. 이를 해밀튼 회로 문제(Hamiltonian Circuits Problem)이라고 한다.
+이때, 도시의 개수가 40개로 늘어난다면 어떨까? 이 경우, 그냥 아무 경로나 선택하더라도 모든 도시를 한번씩 돌고 오는 경우를 찾는 것이 더 효율적이다. 이를 <b>해밀튼 회로 문제(Hamiltonian Circuits Problem)</b>이라고 한다.
+
+## Example
+![image](https://user-images.githubusercontent.com/74875490/172007181-e368c674-8389-4f3e-b1d4-b79bb05977bd.png)<br>
+위와 같이 13번째 방문에 조건을 만족하는 해답을 얻어내게 된다.
+
+![image](https://user-images.githubusercontent.com/74875490/172007181-e368c674-8389-4f3e-b1d4-b79bb05977bd.png)<br>
 
 <pre><code>
 void hamiltonian(index i){

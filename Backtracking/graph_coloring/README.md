@@ -1,4 +1,7 @@
 # 그래프 색칠하기
+- four color theorem: 4가지 색만 있으면 마주하는 면이 서로 다른 색이 다른 색이 되도록 평문을 색칠할 수 있다.
+- planar: 다음과 같이 edge들이 서로 교차하지 않으면 planar이라고 한다. 
+![image](https://user-images.githubusercontent.com/74875490/172007089-d17748ea-d243-4374-927f-b69fb35839d3.png)<br>
 
 <pre><code>
 void m_coloring(index i){
