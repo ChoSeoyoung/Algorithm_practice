@@ -3,6 +3,11 @@ B트리는 이진트리와 다르게 하나의 노드에 많은 수의 정보를
 ![image](https://user-images.githubusercontent.com/74875490/171668123-f138ef42-80dd-457a-a767-242d0eee9cc4.png)
 <br>
 
+- t: minimum degree of B-tree
+- 최소 키 개수: (t-1)개
+- 최대 키 개수: (2t-1)개
+- 최대 자식 개수: (2t)개
+
 ## 탐색(검색)
 1. 루트 노드에서 시작하여 key들을 순회하면서 검사한다.
     - 만일 k와 같은 key를 찾았다면 검색을 종료한다.
@@ -40,7 +45,6 @@ key를 삽입하기 위해서는 1. 요소 삽입에 적절한 리프 노드를 
 내부 노드의 경우, 힙 sort의 삭제 연산과 비슷한데, 자식을 찾아 바꾼 후 삭제한다.
 ![image](https://user-images.githubusercontent.com/74875490/171679193-cf3d23be-08b2-4878-976b-91822f2dcd48.png)<br>
 ![image](https://user-images.githubusercontent.com/74875490/171679363-7f831483-17c7-4b45-88e0-0ae578528216.png)<br>
-삭제시 합병이 필요한 경우
 ![image](https://user-images.githubusercontent.com/74875490/171911945-c79ca6cc-8a81-4e3c-9537-9f6cd45fa043.png)<br>
 
 ## 참고
