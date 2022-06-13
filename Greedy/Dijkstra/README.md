@@ -1,6 +1,9 @@
 # Dijkstra Algorithm
 다익스트라(Dijkstra) 알고리즘은 시작 정점부터 끝 정점까지 가장 빨리 도달할 수 있는 경로를 찾는 알고리즘이다. 다익스트라는 매 순간 최소 비용을 선택해 최종적으로 최단 경로를 찾아낸다. 부분 경로의 최단 경로의 집합은 전체 경로의 최단경로(Optimal substructure)라는 정의를 가진다.
 
+## 시간복잡도
+Every-time complexity는 O(n^2)이다.
+
 <pre><code>
 void dijkstra(int n, const number W[][], set_of_edges& F){
     index i, vnear;

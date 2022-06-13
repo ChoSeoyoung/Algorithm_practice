@@ -12,3 +12,17 @@
 d1=1, d2=2, d3=5, d4=10, d5=25, d6=50, d7=100의 동전이 있다고 하자.<br>
 - greedy 접근: 50+25+10+1
 - 실제 optimal: 50+18+18
+
+## Greedy Algorithm으로 풀 수 있는 문제들 
+- The Coin Change Problem
+- Minimum Spanning Tree
+    * Prim's -  every-time complexity: O(n^2)
+    * Kruskal's -  worst-time complexity: O(mlgm)(단, n-1<=m<=n(n-1)/2)
+- Dijkstra's Algroithm for Sigle-Source Shortest Paths
+    * O(n^2)
+- Scheduling
+    * O(nlgn)
+- Huffman Code
+    * O(nlgn)
+- The Knapsack Problem
+
