@@ -9,4 +9,10 @@
 유망한 마디값들의 한계값을 비교하여 그 중에서 가장 좋은 한계값을 가진 마디의 자식마디를 방문하는 방법
 - 너비우선탐색(BFS)를 통해서 구현할 수 있다.
 
+## DP, Greedy, Backtracking, Branch_and_bound의 비교
+DP(동적 계획법)은 재귀 관계식을 세우고, 문제를 더 작은 입력사례로 분할하면서 해답을 찾는다.
+Greedy는 눈 앞에 보이는 최적의 해답을 쫓아 가장 좋아보이는 답을 고른다. 이때, Greedy Algorithm으로 도출한 답이 항상 최적해가 되는 것은 아니다.
+Backtracking은 DFS방식으로 상태공간트리를 탐색하면서, 해당 노드가 유망하지 않으면 더 이상 자식 노드를 탐색하지 않고 부모노드로 되돌아 간다.
+Branch_and_Bound는 bound를 설정하여 현재 가장 유망한 노드를 선택해 탐색을 한다.
+
 ### https://seungjuitmemo.tistory.com/110

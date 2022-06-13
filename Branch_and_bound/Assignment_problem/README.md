@@ -13,6 +13,6 @@ lower bound of total cost를 계산해야 한다.
 ![image](https://user-images.githubusercontent.com/74875490/172012458-06dc00f3-bb35-4b96-81a3-4acf5bde0eae.png)<br>
 person a는 job2(2)를 선택하는 것이 가장 최적의 낮은 lower bound of total cost를 갖는다.
 ![image](https://user-images.githubusercontent.com/74875490/172012593-7bbe2ee2-94ff-4df1-8ba3-9eaeff7af043.png)<br>
-이어서 person b가 job1(6)을 선택하는 것이 가장 낮은 lower bound of total cost를 갖는다.
+이어서 person b가 job1(6)을 선택하는 것이 가장 낮은 lower bound of total cost를 갖는다.<br>
 ![image](https://user-images.githubusercontent.com/74875490/172012789-104e2039-8045-474d-9f42-05f72db00704.png)<br>
 위 과정과 동일하다.
