@@ -47,7 +47,7 @@
 - 주어진 시간 예산 내에서 최대한 좋은 해를 찾는 알고리즘 개발에 집중한다.
 
 # 근사 알고리즘
-## The Trave-Salesman Problem
+## The Traveling Salesman Problem
 주어진 완전 그래프 G=(V, E)가, 연결되어 있고(connected) 가중치가 있는(weighted) 완전한(complete) 그래프라고 가정하자. 이 그래프에서 출발 정점에서 다른 모든 정점들을 방문하고 원래의 출발 정점으로 되돌아오는 순환 경로들 중에서 가중치의 합이 최소가 되는 순환 경로를 찾아라.
 
 1. V를 정점으로 하고 간선의 cost가 d인 complete graph에 대해 minimum spanning tree T를 구한다.

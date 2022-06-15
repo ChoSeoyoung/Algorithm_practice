@@ -8,8 +8,6 @@
 ![image](https://user-images.githubusercontent.com/74875490/172007181-e368c674-8389-4f3e-b1d4-b79bb05977bd.png)<br>
 위와 같이 13번째 방문에 조건을 만족하는 해답을 얻어내게 된다.
 
-![image](https://user-images.githubusercontent.com/74875490/172007181-e368c674-8389-4f3e-b1d4-b79bb05977bd.png)<br>
-
 <pre><code>
 void hamiltonian(index i){
     index j;
@@ -37,7 +35,7 @@ bool promising(index i){
         switch=true;
         j=1;
 
-        while(j<i && switch){
+        while(j < i && switch){
             if(vindex[i]==vindex[j])
                 switch=false;
             j++;

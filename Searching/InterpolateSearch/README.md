@@ -1,5 +1,5 @@
-# Interpolte Search, 보간 검색
-단순 키 비교만으로는 검색에 대한 시간복잡도를 O(lgn)이상 향상시킬 수 없다. 검색을 도울 수 있는 어떤 다른 정보가 있는 경우 하한을 향상시킬 수 있다.
+# Interpolate Search, 보간 검색
+단순 키 비교만으로는 검색에 대한 시간복잡도를 O(lgn)이상 향상시킬 수 없다. 검색을 도울 수 있는 어떤 다른 정보가 있는 경우 하한을 향상시킬 수 있다.<br>
 ![image](https://user-images.githubusercontent.com/74875490/173378756-2efe1cb8-7983-4fc0-9deb-78ab7f7ae8f6.png)<br>
 
 ## 시간복잡도

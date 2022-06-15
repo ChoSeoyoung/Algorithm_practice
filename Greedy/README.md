@@ -25,4 +25,5 @@ d1=1, d2=2, d3=5, d4=10, d5=25, d6=50, d7=100의 동전이 있다고 하자.<br>
 - Huffman Code
     * O(nlgn)
 - The Knapsack Problem
+    * 단위 무게당 가치를 기준으로 한다.
 
